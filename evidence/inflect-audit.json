@@ -1,0 +1,85 @@
+{
+  "claims": [
+    {
+      "computed": 3.006918157937514,
+      "label": "small",
+      "raw_row": "| small | 100 | 9.148 | 3.042 | **3.007x** |",
+      "value": 3.007
+    },
+    {
+      "computed": 2.98287792754989,
+      "label": "medium",
+      "raw_row": "| medium | 300 | 29.570 | 9.913 | **2.983x** |",
+      "value": 2.983
+    },
+    {
+      "computed": 2.792688223019786,
+      "label": "large",
+      "raw_row": "| large | 766 | 74.897 | 26.819 | **2.793x** |",
+      "value": 2.793
+    },
+    {
+      "label": "real corpus, mixed plural+singular",
+      "raw_row": "| real corpus, mixed plural+singular | 766 pairs | 134.823 | 69.774 | **1.932x** |",
+      "real_corpus": true,
+      "value": 1.932
+    }
+  ],
+  "errors": 0,
+  "findings": [],
+  "metadata": {
+    "bootstrap_rounds": 2000,
+    "patch_lines": 21,
+    "readme_chars": 5342,
+    "workloads_computed": 4
+  },
+  "ok": true,
+  "repo": "/tmp/ev-inflect",
+  "warnings": 0,
+  "workloads": {
+    "large": {
+      "baseline_ms": 74.8968506231904,
+      "baseline_samples": 7,
+      "optimized_ms": 26.818908751010895,
+      "optimized_samples": 7,
+      "speedup": 2.792688223019786,
+      "speedup_ci95": [
+        2.7520959375821548,
+        2.890786147856086
+      ]
+    },
+    "medium": {
+      "baseline_ms": 29.569530859589577,
+      "baseline_samples": 7,
+      "optimized_ms": 9.913087822496891,
+      "optimized_samples": 7,
+      "speedup": 2.98287792754989,
+      "speedup_ci95": [
+        2.9243505578934013,
+        3.0767123731108246
+      ]
+    },
+    "real_mixed": {
+      "baseline_ms": 134.82283428311348,
+      "baseline_samples": 7,
+      "optimized_ms": 69.77376155555248,
+      "optimized_samples": 7,
+      "speedup": 1.9322855938585197,
+      "speedup_ci95": [
+        1.8823999158480755,
+        2.006721138166884
+      ]
+    },
+    "small": {
+      "baseline_ms": 9.147880598902702,
+      "baseline_samples": 7,
+      "optimized_ms": 3.042277880012989,
+      "optimized_samples": 7,
+      "speedup": 3.006918157937514,
+      "speedup_ci95": [
+        2.5639908973272054,
+        3.2519017331443094
+      ]
+    }
+  }
+}

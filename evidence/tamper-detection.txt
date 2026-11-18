@@ -1,0 +1,10 @@
+benchreconcile: /tmp/ev-inflect-tamper
+workload                 baseline ms   optimized ms   speedup   95% CI
+large                         74.897         26.819    2.793x  [2.75, 2.89]
+medium                        29.570          9.913    2.983x  [2.92, 3.08]
+real_mixed                   134.823         69.774    1.932x  [1.88, 2.01]
+small                          9.148          3.042    3.007x  [2.56, 3.25]
+
+ERROR E005 [optimized.json:small]: committed median_ms=1.5 but raw gives 3.042277880012989
+
+1 error(s), 0 warning(s); status=FAIL
